@@ -5,6 +5,7 @@
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 	<servlet>
+	    <description>The index page of whole site</description>
 		<servlet-name>index</servlet-name>
 		<jsp-file>/WEB-INF/page-fragment/index.jsp</jsp-file>
 	</servlet>
@@ -14,21 +15,17 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	</servlet-mapping>
 
 	<servlet>
-		<description>
-		</description>
+		<description>Html tutorial web site</description>
 		<display-name>HtmlTutorialGenerateServlet</display-name>
 		<servlet-name>HtmlTutorialGenerateServlet</servlet-name>
 		<servlet-class>html.HtmlTutorialGenerateServlet</servlet-class>
 		<init-param>
-			<description>
-			the path of htmltutorial fragment setting file</description>
+			<description>the setting file which indicates the path that html tutorial fragment  page located</description>
 			<param-name>tutorial-fragment-config</param-name>
 			<param-value>/WEB-INF/html-tutorial/html-tutorial.properties</param-value>
 		</init-param>
 		<init-param>
-			<description>
-		    the path of html-tutorial framework page file
-		  </description>
+			<description> the path that html-tutorial index page file located</description>
 			<param-name>tutorial-fragment-skeleton</param-name>
 			<param-value>/WEB-INF/html-tutorial/html-tutorial.jsp</param-value>
 		</init-param>
@@ -41,21 +38,21 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	</servlet-mapping>
 
 	<servlet>
+	   <description>the servlet that generates web design course project proposal</description>
 		<servlet-name>proposal</servlet-name>
 		<jsp-file>/WEB-INF/proposal/proposal.jsp</jsp-file>
-	</servlet>
-	<servlet>
-		<description>
-		</description>
-		<display-name>ServerInfo</display-name>
-		<servlet-name>ServerInfo</servlet-name>
-		<servlet-class>system.ServerInfo</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>proposal</servlet-name>
 		<url-pattern>/proposal.jsp</url-pattern>
 		<url-pattern>/proposal.html</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<display-name>ServerInfo</display-name>
+		<servlet-name>ServerInfo</servlet-name>
+		<servlet-class>system.ServerInfo</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ServerInfo</servlet-name>
 		<url-pattern>/ServerInfo</url-pattern>
@@ -65,23 +62,23 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		<servlet-name>working</servlet-name>
 		<jsp-file>/WEB-INF/system-message/working.jsp</jsp-file>
 	</servlet>
+	   <servlet-mapping>
+        <servlet-name>working</servlet-name>
+        <url-pattern>/working</url-pattern>
+    </servlet-mapping>
+	
 	<servlet>
 		<description>
-		servlet response for generate css tutorial content</description>
+		the servlet that response for generate css tutorial content</description>
 		<display-name>CssTutorialGenerateServlet</display-name>
 		<servlet-name>CssTutorialGenerateServlet</servlet-name>
 		<servlet-class>css.CssTutorialGenerateServlet</servlet-class>
 		<init-param>
-			<description>
-			file path of css tutorial config file path</description>
+			<description>The path of css tutorial settings file </description>
 			<param-name>cssTutorialConfigFilePath</param-name>
 			<param-value>/WEB-INF/css-tutorial/css-tutorial.properties</param-value>
 		</init-param>
 	</servlet>
-	<servlet-mapping>
-		<servlet-name>working</servlet-name>
-		<url-pattern>/working</url-pattern>
-	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>CssTutorialGenerateServlet</servlet-name>
 		<url-pattern>/css-tutorial</url-pattern>
@@ -90,15 +87,6 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		<servlet-name>CssTutorialGenerateServlet</servlet-name>
 		<url-pattern>/css-tutorial.html</url-pattern>
 	</servlet-mapping>
-
-    <servlet>
-       <servlet-name>test-output</servlet-name>
-       <jsp-file>/WEB-INF/page-fragment/test.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-       <servlet-name>test-output</servlet-name>
-       <url-pattern>/test</url-pattern>
-    </servlet-mapping>
 
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>

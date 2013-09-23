@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-	String fullPage = request.getParameter("output");
-	if (fullPage == null || fullPage.equalsIgnoreCase("all")) {
+    String fullPage = request.getParameter("output");
+    if (fullPage == null || fullPage.equalsIgnoreCase("all")) {
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -28,7 +28,8 @@
 				<div id="slogan">
 					<p>
 						<span class="slogan-big">這個網站的目地是要收集與整理網頁設計資源<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快 </span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快
+						</span>
 					</p>
 				</div>
 				<!-- end slogan -->
@@ -43,17 +44,18 @@
 
 			<div id="main">
 				<%
-					} //if fullPage == null || fullPage.equalsIgnoreCase("true")
-					if (fullPage == null || fullPage.equalsIgnoreCase("all")
-							|| fullPage.equalsIgnoreCase("main") ) {
+				    } //if fullPage == null || fullPage.equalsIgnoreCase("true")
+				    if (fullPage == null || fullPage.equalsIgnoreCase("all")
+				            || fullPage.equalsIgnoreCase("main")) {
 				%>
 				<div id="content" class="contentBlock">
 					<%
-						} //if fullPage == null || fullPage.equalsIgnoreCase("true") || fullPage.equalsIgnoreCase("main")
+					    } //if fullPage == null || fullPage.equalsIgnoreCase("true") || fullPage.equalsIgnoreCase("main")
 					%>
 					<jsp:include page="/WEB-INF/system-message/working-message.jsp"></jsp:include>
 					<%
-						if (fullPage == null || fullPage.equalsIgnoreCase("all") || fullPage.equalsIgnoreCase("main") ) {
+					    if (fullPage == null || fullPage.equalsIgnoreCase("all")
+					            || fullPage.equalsIgnoreCase("main")) {
 					%>
 				</div>
 				<!-- end content -->
@@ -85,5 +87,5 @@
 </body>
 </html>
 <%
-	} // if fullPage == null || fullPage.equalsIgnoreCase("true") || fullPage.equalsIgnoreCase("main")
+    } // if fullPage == null || fullPage.equalsIgnoreCase("true") || fullPage.equalsIgnoreCase("main")
 %>

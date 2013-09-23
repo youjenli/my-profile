@@ -2,10 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="proposal.ProposalInfo"%>
 <%
-	String fullpage = (String) request
-			.getParameter(ProposalInfo.OUTPUT_FULL_PAGE_REQ_PARAM);
-	if (fullpage == null
-			|| fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)) {
+    String fullpage = (String) request
+            .getParameter(ProposalInfo.OUTPUT_FULL_PAGE_REQ_PARAM);
+    if (fullpage == null
+            || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)) {
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -31,7 +31,8 @@
 				<div id="slogan">
 					<p>
 						<span class="slogan-big">這個網站的目地是要收集與整理網頁設計資源<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快 </span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快
+						</span>
 					</p>
 				</div>
 				<!-- end slogan -->
@@ -46,7 +47,7 @@
 
 			<div id="main">
 				<%
-					} //if fullpage == null || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)
+				    } //if fullpage == null || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)
 				%>
 				<div id="content" class="contentBlock">
 					<jsp:include page="/WEB-INF/proposal/proposal-announce.jsp"></jsp:include>
@@ -60,8 +61,8 @@
 
 				<div class="clear"></div>
 				<%
-					if (fullpage == null
-							|| fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)) {
+				    if (fullpage == null
+				            || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)) {
 				%>
 			</div>
 			<!-- end main -->
@@ -84,5 +85,5 @@
 </body>
 </html>
 <%
-	} //if fullpage == null || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)
+    } //if fullpage == null || fullpage.equalsIgnoreCase(ProposalInfo.OUTPUT_FULL_PAGE)
 %>

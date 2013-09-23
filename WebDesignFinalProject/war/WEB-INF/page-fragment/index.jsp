@@ -25,7 +25,8 @@
 				<div id="slogan">
 					<p>
 						<span class="slogan-big">這個網站的目地是要收集與整理網頁設計資源<br />
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快 </span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快
+						</span>
 					</p>
 				</div>
 				<!-- end slogan -->
@@ -37,7 +38,7 @@
 
 			</div>
 			<!-- end banner -->
-            <a name="ctAnchor"></a>
+			<a name="ctAnchor"></a>
 			<div id="main">
 
 				<div id="content" class="contentBlock">

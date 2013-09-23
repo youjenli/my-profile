@@ -32,8 +32,6 @@ public class ServerInfo extends HttpServlet {
 		ServletContext context = this.getServletConfig().getServletContext();
 		
 		info(out, "Servlet Context name", context.getServletContextName() );
-        info(out, "ServletContext context path", context.getContextPath() );
-        info(out, "Servlet Request context path", req.getContextPath() );
         info(out, "Servlet Request URI", req.getRequestURI() );
         info(out, "Servlet Request URL", req.getRequestURL().toString() );
         info(out, "Servlet Request Servlet Path", req.getServletPath() );
