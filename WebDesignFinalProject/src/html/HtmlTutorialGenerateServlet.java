@@ -85,10 +85,10 @@ public class HtmlTutorialGenerateServlet extends HttpServlet implements
 		String output = request.getParameter(OUTPUT_REQ_PARAM_NAME);
 		if (output == null) {
 			request.setAttribute(OUTPUT_REQ_PARAM_NAME, OUTPUT_FULL_PAGE);
-		} else if (output.equals(OUTPUT_MAIN_ONLY)) {
-			request.setAttribute(OUTPUT_REQ_PARAM_NAME, OUTPUT_MAIN_ONLY);
+		} else if (output.equals(OUTPUT_ONLY_MAIN)) {
+			request.setAttribute(OUTPUT_REQ_PARAM_NAME, OUTPUT_ONLY_MAIN);
 		} else {
-			request.setAttribute(OUTPUT_REQ_PARAM_NAME, OUTPUT_CONTENT_ONLY);
+			request.setAttribute(OUTPUT_REQ_PARAM_NAME, OUTPUT_ONLY_CONTENT);
 		}
 
 		// determine what to output

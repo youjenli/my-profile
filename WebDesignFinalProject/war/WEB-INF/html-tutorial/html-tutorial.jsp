@@ -47,26 +47,26 @@
 			<a name="ctAnchor"></a>
 			<div id="main">
 				<%
-					} // if output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
-					if (output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
-							|| output.equals(HtmlTutorial.OUTPUT_MAIN_ONLY)) {
+				    } // if output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
+									if (output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
+											|| output.equals(HtmlTutorial.OUTPUT_ONLY_MAIN)) {
 				%>
 				<div id="content" class="contentBlock">
 					<%
-						} //if output.equals(HtmlTutorial.OUTPUT_FULL_PAGE) || output.equals(HtmlTutorial.OUTPUT_MAIN_ONLY)
+					    } //if output.equals(HtmlTutorial.OUTPUT_FULL_PAGE) || output.equals(HtmlTutorial.OUTPUT_MAIN_ONLY)
 
-						out.flush();
-						HtmlTutorial tut = (HtmlTutorial) request
-								.getAttribute(HtmlTutorial.REQ_ATTR_PARAM_NAME);
-						String[] contentPath = tut.getContentFragmentPath();
-						RequestDispatcher dispatcher = null;
-						for (int i = 0; i < contentPath.length; i++) {
-							dispatcher = request.getRequestDispatcher(contentPath[i]);
-							dispatcher.include(request, response);
-						}
+											out.flush();
+											HtmlTutorial tut = (HtmlTutorial) request
+													.getAttribute(HtmlTutorial.REQ_ATTR_PARAM_NAME);
+											String[] contentPath = tut.getContentFragmentPath();
+											RequestDispatcher dispatcher = null;
+											for (int i = 0; i < contentPath.length; i++) {
+												dispatcher = request.getRequestDispatcher(contentPath[i]);
+												dispatcher.include(request, response);
+											}
 
-						if (output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
-								|| output.equals(HtmlTutorial.OUTPUT_MAIN_ONLY)) {
+											if (output.equals(HtmlTutorial.OUTPUT_FULL_PAGE)
+													|| output.equals(HtmlTutorial.OUTPUT_ONLY_MAIN)) {
 					%>
 				</div>
 				<!-- end content -->

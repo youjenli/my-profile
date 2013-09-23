@@ -17,7 +17,7 @@ function replaceMain(url){
 	};
 	xmlhttp.open("GET", url, true);
 	xmlhttp.send(null);
-	return false;
+	return false; //Check out the meaning of this line
 }
 
 function replaceContent(url) {

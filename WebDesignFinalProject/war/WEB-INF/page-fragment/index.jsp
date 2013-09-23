@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="/css/index.css" />
 <script type="text/javascript" src="/js/header.js"></script>
-<title>Mtyjl 的網頁設計學習心得筆記</title>
+<title>Mtyjl 的學習筆記</title>
 </head>
 <body>
 	<div id="container">
@@ -14,9 +14,9 @@
 		<div id="container-inner">
 			<div id="header">
 				<h1>
-					<a href="/index.html">Mtyjl 的網頁網頁設計學習筆記</a>
+					<a href="/index.html#top">Mtyjl 的學習筆記</a>
 				</h1>
-				<p>網頁設計的心得整理</p>
+				<p>Web 開發的心得整理</p>
 				<div class="clear"></div>
 			</div>
 			<!-- end header -->
@@ -24,7 +24,7 @@
 
 				<div id="slogan">
 					<p>
-						<span class="slogan-big">這個網站的目地是要收集與整理網頁設計資源<br />
+						<span class="slogan-big">這個網站的目地是要收集與整理各種Web 開發的學習資源<br />
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望讓大家的學習過程可以更輕鬆愉快
 						</span>
 					</p>

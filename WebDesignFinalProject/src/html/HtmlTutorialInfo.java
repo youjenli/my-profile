@@ -8,8 +8,8 @@ public interface HtmlTutorialInfo {
 	public final static String HTML_FULL_REFERENCE_REQ_PARAM_NAME = "all";
 	
 	public final static String OUTPUT_REQ_PARAM_NAME = "output";
-	public final static String OUTPUT_CONTENT_ONLY = "content";
-	public final static String OUTPUT_MAIN_ONLY = "main";
+	public final static String OUTPUT_ONLY_CONTENT = "content";
+	public final static String OUTPUT_ONLY_MAIN = "main";
 	public final static String OUTPUT_FULL_PAGE = "full";
 	
 }
