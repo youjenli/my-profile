@@ -88,8 +88,51 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		<url-pattern>/css-tutorial.html</url-pattern>
 	</servlet-mapping>
 
+    <servlet>
+        <description>Servlet handles new chat request and new message request</description>
+        <display-name>MessageReceivingServlet</display-name>
+        <servlet-name>MessageReceivingServlet</servlet-name>
+        <servlet-class>chat.servlet.MessageReceivingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageReceivingServlet</servlet-name>
+        <url-pattern>/MessageReceivingServlet</url-pattern>
+        <url-pattern>/MessageReceive</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>servlet that response for user registration </description>
+        <servlet-name>Registration</servlet-name>
+        <jsp-file>/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Register</url-pattern>
+        <url-pattern>/register</url-pattern>
+        <url-pattern>/Login</url-pattern>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <description>This ServletContextListener initialize it self at the begining of this system</description>
+        <listener-class>chat.ChatServiceImpl</listener-class>
+    </listener>
+ 
+    <servlet>
+       <description>This Servlet handles the notification that particular client has disconnected</description>
+        <display-name>ClientDisconnectHandler</display-name>
+        <servlet-name>ClientDisconnectHandler</servlet-name>
+        <servlet-class>chat.servlet.ClientDisconnectHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClientDisconnectHandler</servlet-name>
+        <url-pattern>/ClientDisconnectHandler</url-pattern>
+        <url-pattern>/_ah/channel/disconnected/</url-pattern>
+    </servlet-mapping>
+
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
+
 </web-app>

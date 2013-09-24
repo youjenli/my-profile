@@ -1,0 +1,26 @@
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px
+}
+
+.container_12 .grid_10 {
+	width: 780px
+}
+
+#messageList {
+	height: 250px; 
+	overflow: scroll; 
+	border: solid 1px black;
+}
+
+#privateMessage{
+	height: 150px; 
+	overflow: scroll; 
+	border: solid 1px black;
+}
+
+#user{
+	width: 100px; 
+	overflow: scroll;	
+}
